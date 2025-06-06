@@ -33,14 +33,14 @@ const Index = () => {
               : "transform scale-0 opacity-0 translate-y-[-200px]"
           }`}
         >
-          {/* Logo Placeholder - Flying Shrimp Airplane */}
+          {/* PNG Logo Placeholder */}
           <div className="w-64 h-64 mx-auto mb-8 relative">
-            <div className="w-full h-full bg-gradient-to-br from-orange-400 to-red-500 rounded-full flex items-center justify-center shadow-2xl animate-pulse">
-              <div className="text-white text-center">
-                <div className="text-6xl mb-2">🦐</div>
-                <div className="text-4xl">✈️</div>
-                <div className="text-lg font-bold mt-2">LOGO</div>
-                <div className="text-sm opacity-80">Replace with your PNG</div>
+            <div className="w-full h-full bg-white/20 backdrop-blur-sm rounded-lg border-2 border-dashed border-orange-400 flex items-center justify-center shadow-2xl">
+              <div className="text-center text-orange-700">
+                <div className="text-6xl mb-4">🖼️</div>
+                <div className="text-lg font-bold mb-2">Logo PNG</div>
+                <div className="text-sm opacity-70">Replace with your transparent PNG</div>
+                <div className="text-xs opacity-50 mt-1">(Flying Shrimp Airplane)</div>
               </div>
             </div>
             {/* Flying trail effect */}
