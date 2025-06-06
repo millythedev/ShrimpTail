@@ -7,7 +7,7 @@ const BreakfastMenu = () => {
   const menuPages = Array.from({ length: 3 }, (_, i) => i + 1);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-amber-50 to-orange-50">
+    <div className="min-h-screen bg-black">
       <MenuNavigation
         currentPage={1}
         totalPages={3}
@@ -26,8 +26,8 @@ const BreakfastMenu = () => {
                   className="w-full bg-white rounded-lg shadow-lg overflow-hidden"
                   style={{ aspectRatio: '8.5/11' }} // 8.5x11 aspect ratio
                 >
-                  <div className="w-full h-full bg-gradient-to-br from-amber-100 to-orange-200 flex items-center justify-center border-2 border-dashed border-amber-300">
-                    <div className="text-center text-amber-700">
+                  <div className="w-full h-full bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center border-2 border-dashed border-blue-300">
+                    <div className="text-center text-blue-700">
                       <div className="text-6xl mb-4">🖼️</div>
                       <div className="text-2xl font-bold mb-2">Breakfast Menu</div>
                       <div className="text-xl font-semibold">Page {pageNumber}</div>
