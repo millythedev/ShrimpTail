@@ -16,5 +16,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/shrimp-plane-menu-fly/',
+  base: "/ShrimpTail/",
 }));

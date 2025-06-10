@@ -1,11 +1,9 @@
-# Shrimp Plane Menu Fly
+# Shrimp Tail Menu
 
-<!-- i love tessa -->
-A menu project for shrimp plane fly.
+A menu project for shrimp tail restaurant.
 
 ## Getting Started
 
-<!-- i love tessa -->
 Clone this repo and run locally:
 
 ```sh
@@ -23,7 +21,6 @@ bun run build
 
 Deploy the contents of the `dist/` folder to GitHub Pages or your preferred static host.
 
----
+## Live Website
 
-Replace this README with your own project details as needed.
-<!-- i love tessa -->
+[https://millythedev.github.io/ShrimpTail/](https://millythedev.github.io/ShrimpTail/)
