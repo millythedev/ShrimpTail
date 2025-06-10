@@ -1,13 +1,13 @@
-
+// i love tessa
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import BreakfastMenu from "./pages/BreakfastMenu";
-import LunchDinnerMenu from "./pages/LunchDinnerMenu";
+import TitlePage from "./pages/menu/TitlePage";
+import MenuPages from "./pages/menu/MenuPages";
 import NotFound from "./pages/NotFound";
+// i love tessa
 
 const queryClient = new QueryClient();
 
@@ -16,11 +16,11 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      {/* i love tessa */}
+      <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
         <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/breakfast" element={<BreakfastMenu />} />
-          <Route path="/lunch-dinner" element={<LunchDinnerMenu />} />
+          <Route path="/" element={<TitlePage />} />
+          <Route path="/menu" element={<MenuPages />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -28,5 +28,5 @@ const App = () => (
     </TooltipProvider>
   </QueryClientProvider>
 );
-
+// i love tessa
 export default App;
