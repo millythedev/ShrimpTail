@@ -16,15 +16,15 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      {/* i love tessa */}
-      <BrowserRouter basename={import.meta.env.BASE_URL} future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-        <Routes>
-          <Route path="/" element={<TitlePage />} />
-          <Route path="/menu" element={<MenuPages />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="min-h-screen w-full overflow-hidden bg-background">
+        <BrowserRouter basename="/ShrimpTail">
+          <Routes>
+            <Route path="/" element={<TitlePage />} />
+            <Route path="/menu" element={<MenuPages />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
     </TooltipProvider>
   </QueryClientProvider>
 );
